@@ -1,0 +1,78 @@
+.gauge {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+}
+
+.gaugeTitle {
+    text-align: center;
+}
+
+
+/* GRAPH CSS */
+
+.gaugeGraph {
+    position: relative;
+    width: 200px;
+    height: 100px;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.circle {
+    position: absolute;
+    display: block;
+    width: 200px;
+    height: 100px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    box-sizing: border-box;
+    z-index: 1;
+    background-color: gray;
+    bottom: 0px;
+    right: 50%;
+    transform: translateX(50%);
+}
+.littleCircle {
+    position: absolute;
+    display: block;
+    width: 170px;
+    height: 85px;
+    margin: 15px;
+    border-top-left-radius: 85px;
+    border-top-right-radius: 85px;
+    z-index: 5;
+    background-color: black;
+}
+
+.circleC {
+    position: absolute;
+    display: block;
+    width: 200px;
+    height: 100px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    box-sizing: border-box;
+    top: 100px;
+    z-index: 3;
+    transform-origin: center top;
+    transition: transform 2s ease, background-color 2s ease;
+}
+
+
+
+/* INFO CSS */
+
+.gaugeInfo {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+
+
+.gaugeInfo .infoCurrent {
+    position: absolute;
+    top: -70px;
+    right: 50%;
+    transform: translateX(50%);
+}

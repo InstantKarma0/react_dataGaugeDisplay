@@ -1,0 +1,23 @@
+#gaugeTheme {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+#gaugeTheme > h4 {
+    width: 100%;
+    margin: 10px 5px;
+}
+
+#gaugeTheme > span {
+    display: block;
+    height: 20px;
+    width: 30px;
+    margin: 5px;
+    border: 1px solid black;
+}
+
+#noneBtn {
+    background: rgb(0,255,0);
+    background: linear-gradient(90deg, rgba(0,255,0,1) 0%, rgba(255,0,0,1) 100%);
+}
